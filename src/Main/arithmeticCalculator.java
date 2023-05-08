@@ -23,6 +23,11 @@ public class arithmeticCalculator {
 		int result = x / y;
 		return result;
 	}
+	public static int rim(int x, int y)
+	{
+		int result = x % y;
+		return result;
+	}
 	public static void main(String args[])
 	{
 		Scanner sc = new Scanner(System.in);
@@ -32,7 +37,7 @@ public class arithmeticCalculator {
 		System.out.println("Enter second number:");
 		n2 = sc.nextInt();
 		int result;
-		System.out.println("Enter your selection: 1 Addition(+), 2 Substraction(-), 3 Multiplication(*), 4 Division(/):");
+		System.out.println("Enter your selection: 1 Addition(+), 2 Substraction(-), 3 Multiplication(*), 4 Division(/), 5 Reminder(%):");
 		int choose;
 		choose = sc.nextInt();
 		switch (choose){
@@ -47,6 +52,9 @@ public class arithmeticCalculator {
 			break;
 		case 4:
 			System.out.println(div( n1,n2));
+			break;
+		case 5:
+			System.out.println(rim(n1, n2));
 			break;
 		default:
 			System.out.println("Oops! Wrong choice, Please choose between 1 2 3 4");
