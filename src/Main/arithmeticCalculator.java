@@ -3,29 +3,29 @@ import java.util.Scanner;
 
 public class arithmeticCalculator {
 
-	public static int add(int x, int y)
+	public static int add(int n1, int n2)
 	{
-		int result = x + y;
+		int result = n1 + n2;
 		return result;
 	}
-	public static int sub(int x, int y)
+	public static int sub(int n1, int n2)
 	{
-		int result = x - y;
+		int result = n1 - n2;
 		return result;
 	}
-	public static int mult(int x, int y)
+	public static int mult(int n1, int n2)
 	{
-		int result = x * y;
+		int result = n1 * n2;
 		return result;
 	}
-	public static int div(int x, int y)
+	public static int div(int n1, int n2)
 	{
-		int result = x / y;
+		int result = n1 / n2;
 		return result;
 	}
-	public static int rim(int x, int y)
+	public static int rim(int n1, int n2)
 	{
-		int result = x % y;
+		int result = n1 % n2;
 		return result;
 	}
 	public static void main(String args[])
@@ -40,6 +40,7 @@ public class arithmeticCalculator {
 		System.out.println("Enter your selection: 1 Addition(+), 2 Substraction(-), 3 Multiplication(*), 4 Division(/), 5 Reminder(%):");
 		int choose;
 		choose = sc.nextInt();
+		
 		switch (choose){
 		case 1:
 			System.out.println(add( n1,n2));
@@ -57,11 +58,12 @@ public class arithmeticCalculator {
 			System.out.println(rim(n1, n2));
 			break;
 		default:
-			System.out.println("Oops! Wrong choice, Please choose between 1 2 3 4");
-
+			System.out.println("Oops! Wrong choice, Please choose between 1 2 3 4 5");
 		}
-
-	}
+		
+		
+	} 
+	
 
 }
 
