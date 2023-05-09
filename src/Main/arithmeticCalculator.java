@@ -36,11 +36,10 @@ public class arithmeticCalculator {
 		n1 = sc.nextInt();
 		System.out.println("Enter second number:");
 		n2 = sc.nextInt();
-		int result;
 		System.out.println("Enter your selection: 1 Addition(+), 2 Substraction(-), 3 Multiplication(*), 4 Division(/), 5 Reminder(%):");
 		int choose;
 		choose = sc.nextInt();
-		
+
 		switch (choose){
 		case 1:
 			System.out.println(add( n1,n2));
@@ -60,10 +59,10 @@ public class arithmeticCalculator {
 		default:
 			System.out.println("Oops! Wrong choice, Please choose between 1 2 3 4 5");
 		}
-		
-		
+
+
 	} 
-	
+
 
 }
 
